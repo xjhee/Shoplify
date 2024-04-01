@@ -9,4 +9,11 @@
     <%= product.price %>
   </p>
 
+  <p>
+    <strong>Buy now:</strong>
+    <td> 
+      <%= button_to "Buy now", checkout_create_path, params: {id: product.id}, remote: true %>
+    </td>
+  </p>
+
 </div>
